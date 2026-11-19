@@ -1,0 +1,7 @@
+name: test
+on: [push, workflow_dispatch]
+jobs:
+  hallo:
+    runs-on: macos-15
+    steps:
+      - run: echo hallo && uname -m && sw_vers
